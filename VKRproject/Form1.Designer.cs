@@ -29,9 +29,11 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ProcessingTimeTextBox = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,18 +46,16 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.RadiusStepTextBox = new System.Windows.Forms.TextBox();
+            this.DepthStepTextBox = new System.Windows.Forms.TextBox();
+            this.DensityTextBox = new System.Windows.Forms.TextBox();
+            this.HeatSourcesTextBox = new System.Windows.Forms.TextBox();
+            this.StartTemperatureTextBox = new System.Windows.Forms.TextBox();
+            this.ThermalCapacityTextBox = new System.Windows.Forms.TextBox();
+            this.EndTemperatureTextBox = new System.Windows.Forms.TextBox();
+            this.TimeStepTextBox = new System.Windows.Forms.TextBox();
+            this.TranscalencyTextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,12 +68,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Время обработки (t,c)";
             // 
-            // textBox1
+            // ProcessingTimeTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(451, 44);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
-            this.textBox1.TabIndex = 1;
+            this.ProcessingTimeTextBox.Location = new System.Drawing.Point(451, 44);
+            this.ProcessingTimeTextBox.Name = "ProcessingTimeTextBox";
+            this.ProcessingTimeTextBox.Size = new System.Drawing.Size(100, 26);
+            this.ProcessingTimeTextBox.TabIndex = 1;
             // 
             // menuStrip1
             // 
@@ -97,6 +97,20 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(50, 29);
             this.fileToolStripMenuItem.Text = "File";
             // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Image = global::VKRproject.Properties.Resources.icons8_сохранить_64;
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(167, 30);
+            this.saveToolStripMenuItem.Text = "Save";
+            // 
+            // saveAsToolStripMenuItem
+            // 
+            this.saveAsToolStripMenuItem.Image = global::VKRproject.Properties.Resources.icons8_сохранить_как_64;
+            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(167, 30);
+            this.saveAsToolStripMenuItem.Text = "Save as...";
+            // 
             // fffToolStripMenuItem
             // 
             this.fffToolStripMenuItem.Name = "fffToolStripMenuItem";
@@ -115,7 +129,7 @@
             // 
             this.aboutToolStripMenuItem1.Image = global::VKRproject.Properties.Resources.icons8_о_нас_64;
             this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(252, 30);
+            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(146, 30);
             this.aboutToolStripMenuItem1.Text = "About";
             // 
             // label2
@@ -199,68 +213,68 @@
             this.label10.TabIndex = 11;
             this.label10.Text = "Шаг по времени ( t,c)";
             // 
-            // textBox2
+            // RadiusStepTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(451, 90);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 26);
-            this.textBox2.TabIndex = 12;
+            this.RadiusStepTextBox.Location = new System.Drawing.Point(451, 90);
+            this.RadiusStepTextBox.Name = "RadiusStepTextBox";
+            this.RadiusStepTextBox.Size = new System.Drawing.Size(100, 26);
+            this.RadiusStepTextBox.TabIndex = 12;
             // 
-            // textBox3
+            // DepthStepTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(451, 142);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 26);
-            this.textBox3.TabIndex = 13;
+            this.DepthStepTextBox.Location = new System.Drawing.Point(451, 142);
+            this.DepthStepTextBox.Name = "DepthStepTextBox";
+            this.DepthStepTextBox.Size = new System.Drawing.Size(100, 26);
+            this.DepthStepTextBox.TabIndex = 13;
             // 
-            // textBox4
+            // DensityTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(451, 195);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 26);
-            this.textBox4.TabIndex = 14;
+            this.DensityTextBox.Location = new System.Drawing.Point(451, 195);
+            this.DensityTextBox.Name = "DensityTextBox";
+            this.DensityTextBox.Size = new System.Drawing.Size(100, 26);
+            this.DensityTextBox.TabIndex = 14;
             // 
-            // textBox5
+            // HeatSourcesTextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(451, 302);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 26);
-            this.textBox5.TabIndex = 15;
+            this.HeatSourcesTextBox.Location = new System.Drawing.Point(451, 302);
+            this.HeatSourcesTextBox.Name = "HeatSourcesTextBox";
+            this.HeatSourcesTextBox.Size = new System.Drawing.Size(100, 26);
+            this.HeatSourcesTextBox.TabIndex = 15;
             // 
-            // textBox6
+            // StartTemperatureTextBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(451, 356);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 26);
-            this.textBox6.TabIndex = 16;
+            this.StartTemperatureTextBox.Location = new System.Drawing.Point(451, 356);
+            this.StartTemperatureTextBox.Name = "StartTemperatureTextBox";
+            this.StartTemperatureTextBox.Size = new System.Drawing.Size(100, 26);
+            this.StartTemperatureTextBox.TabIndex = 16;
             // 
-            // textBox7
+            // ThermalCapacityTextBox
             // 
-            this.textBox7.Location = new System.Drawing.Point(451, 248);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 26);
-            this.textBox7.TabIndex = 17;
+            this.ThermalCapacityTextBox.Location = new System.Drawing.Point(451, 248);
+            this.ThermalCapacityTextBox.Name = "ThermalCapacityTextBox";
+            this.ThermalCapacityTextBox.Size = new System.Drawing.Size(100, 26);
+            this.ThermalCapacityTextBox.TabIndex = 17;
             // 
-            // textBox8
+            // EndTemperatureTextBox
             // 
-            this.textBox8.Location = new System.Drawing.Point(451, 407);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 26);
-            this.textBox8.TabIndex = 18;
+            this.EndTemperatureTextBox.Location = new System.Drawing.Point(451, 407);
+            this.EndTemperatureTextBox.Name = "EndTemperatureTextBox";
+            this.EndTemperatureTextBox.Size = new System.Drawing.Size(100, 26);
+            this.EndTemperatureTextBox.TabIndex = 18;
             // 
-            // textBox9
+            // TimeStepTextBox
             // 
-            this.textBox9.Location = new System.Drawing.Point(451, 458);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 26);
-            this.textBox9.TabIndex = 19;
+            this.TimeStepTextBox.Location = new System.Drawing.Point(451, 458);
+            this.TimeStepTextBox.Name = "TimeStepTextBox";
+            this.TimeStepTextBox.Size = new System.Drawing.Size(100, 26);
+            this.TimeStepTextBox.TabIndex = 19;
             // 
-            // textBox10
+            // TranscalencyTextBox
             // 
-            this.textBox10.Location = new System.Drawing.Point(451, 505);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 26);
-            this.textBox10.TabIndex = 20;
+            this.TranscalencyTextBox.Location = new System.Drawing.Point(451, 505);
+            this.TranscalencyTextBox.Name = "TranscalencyTextBox";
+            this.TranscalencyTextBox.Size = new System.Drawing.Size(100, 26);
+            this.TranscalencyTextBox.TabIndex = 20;
             // 
             // button1
             // 
@@ -270,20 +284,7 @@
             this.button1.TabIndex = 21;
             this.button1.Text = "Построить";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Image = global::VKRproject.Properties.Resources.icons8_сохранить_64;
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(252, 30);
-            this.saveToolStripMenuItem.Text = "Save";
-            // 
-            // saveAsToolStripMenuItem
-            // 
-            this.saveAsToolStripMenuItem.Image = global::VKRproject.Properties.Resources.icons8_сохранить_как_64;
-            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(252, 30);
-            this.saveAsToolStripMenuItem.Text = "Save as...";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -291,15 +292,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(587, 612);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.TranscalencyTextBox);
+            this.Controls.Add(this.TimeStepTextBox);
+            this.Controls.Add(this.EndTemperatureTextBox);
+            this.Controls.Add(this.ThermalCapacityTextBox);
+            this.Controls.Add(this.StartTemperatureTextBox);
+            this.Controls.Add(this.HeatSourcesTextBox);
+            this.Controls.Add(this.DensityTextBox);
+            this.Controls.Add(this.DepthStepTextBox);
+            this.Controls.Add(this.RadiusStepTextBox);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -309,7 +310,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ProcessingTimeTextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -326,7 +327,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox ProcessingTimeTextBox;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
@@ -343,15 +344,15 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox RadiusStepTextBox;
+        private System.Windows.Forms.TextBox DepthStepTextBox;
+        private System.Windows.Forms.TextBox DensityTextBox;
+        private System.Windows.Forms.TextBox HeatSourcesTextBox;
+        private System.Windows.Forms.TextBox StartTemperatureTextBox;
+        private System.Windows.Forms.TextBox ThermalCapacityTextBox;
+        private System.Windows.Forms.TextBox EndTemperatureTextBox;
+        private System.Windows.Forms.TextBox TimeStepTextBox;
+        private System.Windows.Forms.TextBox TranscalencyTextBox;
         private System.Windows.Forms.Button button1;
     }
 }

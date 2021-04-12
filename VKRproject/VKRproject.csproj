@@ -92,5 +92,15 @@
   <ItemGroup>
     <None Include="Resources\icons8-сохранить-как-64.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Builder\Builder.csproj">
+      <Project>{0cf98be2-2fe2-4163-a513-5a854f2a0d28}</Project>
+      <Name>Builder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{2f663132-afd9-45c5-9f09-8af74bc79f2c}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
