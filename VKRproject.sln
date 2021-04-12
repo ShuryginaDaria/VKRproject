@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.1401
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VKRproject", "VKRproject\VKRproject.csproj", "{8C89904E-ACD8-45D9-BDA5-010136D5CF76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Builder\Builder.csproj", "{0CF98BE2-2FE2-4163-A513-5A854F2A0D28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{2F663132-AFD9-45C5-9F09-8AF74BC79F2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{8C89904E-ACD8-45D9-BDA5-010136D5CF76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C89904E-ACD8-45D9-BDA5-010136D5CF76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C89904E-ACD8-45D9-BDA5-010136D5CF76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CF98BE2-2FE2-4163-A513-5A854F2A0D28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CF98BE2-2FE2-4163-A513-5A854F2A0D28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CF98BE2-2FE2-4163-A513-5A854F2A0D28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CF98BE2-2FE2-4163-A513-5A854F2A0D28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F663132-AFD9-45C5-9F09-8AF74BC79F2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F663132-AFD9-45C5-9F09-8AF74BC79F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F663132-AFD9-45C5-9F09-8AF74BC79F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F663132-AFD9-45C5-9F09-8AF74BC79F2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
