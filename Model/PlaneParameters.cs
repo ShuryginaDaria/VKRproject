@@ -271,6 +271,42 @@ namespace Model
 
         #endregion
 
+        #region Constructor
+
+        /// <summary>
+        ///     Конструктор параметров коробки
+        /// </summary>
+        /// <param name="processingTime"></param>
+        /// <param name="radiusStep"></param>
+        /// <param name="depthStep"></param>
+        /// <param name="density"></param>
+        /// <param name="thermalCapacity"></param>
+        /// <param name="heatSources"></param>
+        /// <param name="startTemperature"></param>
+        /// <param name="endTemperature"></param>
+        /// <param name="timeStep"></param>
+        /// <param name="transcalency"></param>
+
+        public PlaneParameters(double processingTime, double radiusStep, double depthStep,
+            double density, double thermalCapacity, double heatSources, double startTemperature,
+            double endTemperature, double timeStep, double transcalency)
+
+        {
+            ProcessingTime = processingTime;
+            RadiusStep = radiusStep;
+            DepthStep = density;
+            Density = density;
+            HeatSources = heatSources;
+            StartTemperature = startTemperature;
+            EndTemperature = endTemperature;
+            TimeStep = timeStep;
+            ThermalCapacity = thermalCapacity;
+            Transcalency = transcalency;
+
+        }
+
+        #endregion
+
         #region Private methods
 
         /// <summary>
